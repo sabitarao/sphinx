@@ -1,0 +1,39 @@
+.. sample documentation master file, created by
+   sphinx-quickstart on Fri Sep 27 00:06:14 2019.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to my Sphinx website!
+=====================================
+
+:Version:
+      |version|
+
+:Language:
+      en
+
+:Copyright:
+      2020
+
+:Audience:
+      Curious peers and hiring managers
+
+
+**About this site:**
+
+   Hi there! 
+   
+   Thanks for stopping by. Here's a quick summary of this website:
+   
+   - Tools used: Sphinx with a `*Read-the-Docs* <https://sphinx-rtd-theme.readthedocs.io/en/stable/index.html#>` theme (tweaked for style and added functionality like reST tabs).  
+   - Source content: Chapters from a DITA-based user guide that I authored in a previous role. Click `here <https://docs.oracle.com/cd/E48434_01/doc.1118/e48178/title.htm>`_ to view the guide in its original format.
+   
+   Yes, that's my cat posing as the website logo! :-)
+
+.. toctree::
+	:hidden:
+
+	overview.md
+	concepts-explained.md	
+	analyze-concepts.md
+	calculate-metrics.md

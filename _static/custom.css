@@ -1,0 +1,342 @@
+body {
+	margin: auto;
+    font-family: proxima-nova, sans-serif;
+    font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+    color: #666666;
+}
+
+p {
+    line-height: 24px;
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.wy-nav-top, .wy-nav-content {
+    background: white;
+}
+
+wy-side-nav-search [style] {
+	background: #36454f !important;
+}
+
+.wy-nav-side {
+    background: #36454f !important;
+}
+
+.wy-side-nav-search {
+	background: #36454f !important;
+    background-color: #36454f !important;
+	text-align: center;
+}
+
+.wy-menu-vertical li.on a {
+	font-family: proxima-nova, sans-serif;
+    color: white;
+    background: #36454f;
+    border: none;
+}
+
+.wy-menu-vertical li.current {
+	font-family: proxima-nova, sans-serif;
+    background: #36454f;
+}
+
+.wy-menu-vertical li.current a {
+	font-family: proxima-nova, sans-serif;
+    color: #36454f;
+    border-right: none;
+    padding: .4045em 47px;
+
+}
+
+.wy-menu-vertical li.current>a {
+	font-family: proxima-nova, sans-serif;
+    color: #36454f;
+    background: white;
+    border: none;
+}
+
+.wy-menu-vertical a {
+	font-family: proxima-nova, sans-serif;
+    line-height: 21px;
+    font-size: 14px;
+	font-weight: normal;
+    color: white;
+	padding: .4045em 34px;
+}
+
+.wy-menu-vertical li.toctree-l2.current>a {
+	font-family: proxima-nova, sans-serif;
+    background: white;
+    padding: .4045em 47px;
+    color: #36454f;
+}
+
+.wy-menu-vertical li.toctree-l2 a, .wy-menu-vertical li.toctree-l3 a, .wy-menu-vertical li.toctree-l4 a {
+    color: white;
+    font-size: 14px;
+}
+
+.wy-menu-vertical li.toctree-l2.current li.toctree-l3>a {
+    display: block;
+    background: #36454f;
+    padding: .4045em 60px;
+}
+
+.wy-menu-vertical li.toctree-l2.current li.toctree-l3>a:hover {
+    display: block;
+    background: #40515c;
+    padding: .4045em 60px;
+}
+
+.wy-menu-vertical li.toctree-l2.current li.toctree-l3.current>a {
+    background: white;
+    padding: .4045em 60px;
+	color: #36454f;
+}
+
+.wy-side-nav-search input[type=text] {
+    border-color: #36454f;
+}
+
+.wy-menu-vertical li.toctree-l1.current>a {
+    border-bottom: none;
+    border-top: none;
+}
+
+p.caption {
+    color: white;
+    font-size: 14px;
+}
+
+.wy-menu-vertical header, .wy-menu-vertical p.caption {
+    color: white;
+    background-color: #40515c;
+    height: 35px;
+    display: inline-block;
+    line-height: 35px;
+    padding-left: 18px;
+    margin: auto;
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.wy-menu-vertical a:hover {
+    background-color: #40515c;
+    cursor: pointer;
+}
+.wy-nav-content {
+  font-size: 14px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: normal;
+  color: #666666;
+  box-sizing: border-box;
+  padding: 1.618em 3.236em;
+  height: 100%;
+  max-width: 1080px !important;
+  margin: auto;
+}
+
+.wy-menu-vertical li.on a, .wy-menu-vertical li.current>a {
+    color: #40515c;
+    padding: .4045em 34px;
+    font-weight: normal;
+    position: relative;
+    background: white;
+    border: none;
+}
+
+h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
+    font-family: proxima-nova, sans-serif;
+	font-weight: bold;
+	color: black;
+}
+
+h1 {
+    font-size: 24px;
+	text-transform: uppercase;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+.wy-plain-list-disc li p:last-child, .rst-content .section ul li p:last-child, .rst-content .toctree-wrapper ul li p:last-child, article ul li p:last-child {
+    margin-bottom: 12px;
+}
+
+.wy-plain-list-decimal li p:last-child, .rst-content .section ol li p:last-child, .rst-content ol.arabic li p:last-child, article ol li p:last-child {
+    margin-bottom: 12px;
+}
+
+.rst-content dl:not(.docutils) dt {
+    display: table;
+    margin: 6px 0;
+    margin: 6px 0;
+    line-height: normal;
+    background: white;
+    color: #f18f01;
+    border-top: none;
+    padding: 6px;
+    position: relative;
+}
+
+.wy-nav-content-wrap {
+    background: white;
+}
+
+.wy-menu-vertical li.current a:hover {
+    background: #40515c;
+	color: white;
+}
+
+a .fa, a .wy-menu-vertical li span.toctree-expand, .wy-menu-vertical li a span.toctree-expand, .wy-menu-vertical li.on a span.toctree-expand, .wy-menu-vertical li.current>a span.toctree-expand, a .rst-content .admonition-title, .rst-content a .admonition-title, a .rst-content h1 .headerlink, .rst-content h1 a .headerlink, a .rst-content h2 .headerlink, .rst-content h2 a .headerlink, a .rst-content h3 .headerlink, .rst-content h3 a .headerlink, a .rst-content h4 .headerlink, .rst-content h4 a .headerlink, a .rst-content h5 .headerlink, .rst-content h5 a .headerlink, a .rst-content h6 .headerlink, .rst-content h6 a .headerlink, a .rst-content dl dt .headerlink, .rst-content dl dt a .headerlink, a .rst-content p.caption .headerlink, .rst-content p.caption a .headerlink, a .rst-content table>caption .headerlink, .rst-content table>caption a .headerlink, a .rst-content .code-block-caption .headerlink, .rst-content .code-block-caption a .headerlink, a .rst-content tt.download span:first-child, .rst-content tt.download a span:first-child, a .rst-content code.download span:first-child, .rst-content code.download a span:first-child, a .icon {
+    display: inline-block;
+    text-decoration: inherit;
+    color: #40515c;
+}
+
+.wy-menu-vertical li span.toctree-expand {
+    color: #40515c;
+}
+
+.wy-alert.wy-alert-info .wy-alert-title, .rst-content .note .wy-alert-title, .rst-content .wy-alert-info.attention .wy-alert-title, .rst-content .wy-alert-info.caution .wy-alert-title, .rst-content .wy-alert-info.danger .wy-alert-title, .rst-content .wy-alert-info.error .wy-alert-title, .rst-content .wy-alert-info.hint .wy-alert-title, .rst-content .wy-alert-info.important .wy-alert-title, .rst-content .wy-alert-info.tip .wy-alert-title, .rst-content .wy-alert-info.warning .wy-alert-title, .rst-content .seealso .wy-alert-title, .rst-content .wy-alert-info.admonition-todo .wy-alert-title, .rst-content .wy-alert-info.admonition .wy-alert-title, .wy-alert.wy-alert-info .rst-content .admonition-title, .rst-content .wy-alert.wy-alert-info .admonition-title, .rst-content .note .admonition-title, .rst-content .wy-alert-info.attention .admonition-title, .rst-content .wy-alert-info.caution .admonition-title, .rst-content .wy-alert-info.danger .admonition-title, .rst-content .wy-alert-info.error .admonition-title, .rst-content .wy-alert-info.hint .admonition-title, .rst-content .wy-alert-info.important .admonition-title, .rst-content .wy-alert-info.tip .admonition-title, .rst-content .wy-alert-info.warning .admonition-title, .rst-content .seealso .admonition-title, .rst-content .wy-alert-info.admonition-todo .admonition-title, .rst-content .wy-alert-info.admonition .admonition-title {
+    background: #ccc;
+}
+
+/* override table width restrictions */
+@media screen and (min-width: 767px) {
+
+   .wy-table-responsive table td {
+      /* !important prevents the common CSS stylesheets from overriding
+         this as on RTD they are loaded after this stylesheet */
+      white-space: normal !important;
+   }
+
+   .wy-table-responsive {
+      overflow: visible !important;
+   }
+}
+
+.btn {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: proxima-nova, sans-serif;
+    box-shadow: none;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: #fff;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 28px;
+  transition: 0.0s;
+  font-size: 16px;
+  font-weight: bold;
+  color: #999;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  border-bottom: 1px solid black;
+  color: #666666;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 6px;
+/* border: 1px solid #ccc; */
+  border-top: none;}
+
+/* Style RST tabs */
+.ui.menu {
+	font-family: proxima-nova, sans-serif;
+}
+.ui.segment {
+    padding: 12px 12px 0 12px;
+}
+
+.ui.segment, .ui.segments .segment {
+    font-size: 14px;
+}
+
+.sphinx-tabs .sphinx-menu a.item {
+    color: #36454f !important;
+}
+
+.sphinx-tabs .sphinx-menu {
+    border-bottom-color: #40515c !important;
+}
+
+.sphinx-tabs .sphinx-menu a.active.item {
+    border-color: #40515c !important;
+}
+
+.sphinx-tab {
+    border-color: #fcfcfc !important;
+    box-sizing: border-box;
+	max-width: 1028px !important;
+}
+
+.sphinx-tab.tab.active {
+    margin: auto;
+	max-width: 1028px !important;
+}
+
+/* Code tabs don't need the code-block border */
+.code-tab.tab {
+    padding: 0.4em !important;
+}
+
+.code-tab.tab div[class^='highlight'] {
+    border: none;
+}
+
+.wy-side-nav-search>div.version {
+    margin-top: -.4045em;
+    margin-bottom: .809em;
+    font-weight: bold;
+    color: #fe940a;
+    text-align: center;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.video_container {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	font-size: 0;
+}
+
+.video_container video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 0;
+}

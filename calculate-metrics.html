@@ -1,0 +1,373 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Finding the optimum solution alternative &mdash; Sphinx beta documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Analyzing concepts" href="analyze-concepts.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #36454f" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concepts-explained.html">Understanding concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analyze-concepts.html">Analyzing concepts</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Finding the optimum solution alternative</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#use-case">Use-case</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#calculate-metrics">Calculate metrics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#compare-and-select-a-solution-alternative">Compare and select a Solution Alternative</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Sphinx</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Finding the optimum solution alternative</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="finding-the-optimum-solution-alternative">
+<h1>Finding the optimum solution alternative<a class="headerlink" href="#finding-the-optimum-solution-alternative" title="Permalink to this headline">¶</a></h1>
+<p>This section details a sample workflow to find the right solution alternative based on metrics and concept-level scores.</p>
+<div class="section" id="use-case">
+<h2>Use-case<a class="headerlink" href="#use-case" title="Permalink to this headline">¶</a></h2>
+<p>Your team has been asked to modify the existing model of a mountain bike to meet certain requirements received as feedback from users. The mountain bike and its components exist in a PLM system as an item structure and items respectively.</p>
+<p>The primary requirements are:</p>
+<ul class="simple">
+<li><p>Reduce cost from $680 to $470</p></li>
+<li><p>Increase power from 35hz to 40hz</p></li>
+</ul>
+<p>The detailed requirement specifications include:</p>
+<ul class="simple">
+<li><p>Reduce the size of the air box to improve efficiency and power</p></li>
+<li><p>Improve the exhaust system to increase the power</p></li>
+<li><p>Implement high flow rates and outstanding oil filtration for better power</p></li>
+</ul>
+<p>The following table summarizes key decisions to take in this scenario:</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Decisions to Consider</th>
+<th>In This Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>How can the existing PLM items be used in the concept design?</td>
+<td>Convert existing items to concept components</td>
+</tr>
+<tr>
+<td>How are requirements and metrics correlated?</td>
+<td>Map requirements to components in the concept structure</td>
+</tr>
+<tr>
+<td>How can the concept structure accommodate multiple concept designs in parallel?</td>
+<td>Assign components to solution alternatives</td>
+</tr>
+<tr>
+<td>How do I ascertain the most suitable concept design?</td>
+<td>Modify component specifications<br>Calculate metrics and compare solution alternatives<br>Determine the concept design that fulfils requirements</td>
+</tr>
+</tbody>
+</table><div class="section" id="prerequisites">
+<h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h3>
+<p>Complete the following actions before proceeding to the next task:</p>
+<ol class="simple">
+<li><p>Convert existing items to components in the concept</p></li>
+<li><p>Assign components to solution alternatives</p></li>
+</ol>
+<p>The structure and component specifications of the newly-created concept <em>Mountain Bike</em> in this example are tabulated here. The units <em>Air Box, Exhaust System</em>, and <em>Oil Filter</em> are PLM items that have been converted to components.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Concept Component</th>
+<th>Default</th>
+<th>Solution Alternative 2</th>
+<th>Solution Alternative 3</th>
+<th>Cost</th>
+<th>Power</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ATV Air Box</td>
+<td>Yes</td>
+<td></td>
+<td></td>
+<td>330</td>
+<td>17</td>
+</tr>
+<tr>
+<td>Air Box</td>
+<td></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>200</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Exhaust System</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>190</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Oil Filter</td>
+<td></td>
+<td></td>
+<td>Yes</td>
+<td>80</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Cartridge Oil Filter</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+<td>140</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Wrench Off Oil Filter</td>
+<td>Yes</td>
+<td></td>
+<td></td>
+<td>145</td>
+<td>13</td>
+</tr>
+</tbody>
+</table><p>The following actions are optional but recommended:</p>
+<ol class="simple">
+<li><p>Enhance specifications of the converted components Air Box, Exhaust System, and Oil Filter.<br />Reuse existing PLM items by converting them to concept components in the structure, and modifying specifications according to the requirements. The changes in component specifications can be translated into item enhancement requests in the PLM system.</p></li>
+<li><p>Map requirements to components in the concept structure.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="calculate-metrics">
+<h2>Calculate metrics<a class="headerlink" href="#calculate-metrics" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>On the <em>Edit Concept</em> page, click the concept root node Mountain Bike and assign the following specifications to it: <em>Target Cost</em> <code>470</code> and <em>Target Power</em> <code>40</code>.</p></li>
+<li><p>Click the <em>Metrics</em> link above the concept structure region to roll up and view metrics.</p></li>
+<li><p>Click the <em>Recalculate</em> icon to view a roll up of assigned metrics.</p></li>
+</ol>
+</div>
+<div class="section" id="compare-and-select-a-solution-alternative">
+<h2>Compare and select a Solution Alternative<a class="headerlink" href="#compare-and-select-a-solution-alternative" title="Permalink to this headline">¶</a></h2>
+<p>View and analyze the metric calculations of each concept.</p>
+<ol class="simple">
+<li><p>On the <em>Edit Concept</em> page in <em>Metrics</em> view, select the <em>Solution Alternative</em> menu and click <em>Default</em>.<br />The calculated power exceeds the target power as indicated by the Warning icon.</p></li>
+<li><p>Repeat step 1 to view the calculated metrics for Solution Alternative 2 and Solution Alternative 3 also.</p></li>
+</ol>
+<p>The cost and power metrics of each solution alternative are tabulated below.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Solution Alternative</th>
+<th>Default</th>
+<th>Solution Alternative 2</th>
+<th>Solution Alternative 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cost</td>
+<td>665</td>
+<td>530</td>
+<td>470</td>
+</tr>
+<tr>
+<td>Power</td>
+<td>45</td>
+<td>39</td>
+<td>35</td>
+</tr>
+</tbody>
+</table><p>Solution Alternative 2 offers an optimum solution to the primary requirements of <em>Target Cost</em> <code>470</code> and <em>Target Power</em> <code>40</code>, so you may choose to convert this alternative to a PLM item structure, or request approval for the concept Mountain Bike itself.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="analyze-concepts.html" class="btn btn-neutral float-left" title="Analyzing concepts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Sabita Rao
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

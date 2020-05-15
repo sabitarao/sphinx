@@ -1,0 +1,65 @@
+# Finding the optimum solution alternative
+This section details a sample workflow to find the right solution alternative based on metrics and concept-level scores.
+
+## Use-case
+Your team has been asked to modify the existing model of a mountain bike to meet certain requirements received as feedback from users. The mountain bike and its components exist in a PLM system as an item structure and items respectively.  
+
+The primary requirements are:
+- Reduce cost from $680 to $470
+- Increase power from 35hz to 40hz
+
+The detailed requirement specifications include:
+- Reduce the size of the air box to improve efficiency and power
+- Improve the exhaust system to increase the power
+- Implement high flow rates and outstanding oil filtration for better power
+
+The following table summarizes key decisions to take in this scenario:
+
+| Decisions to Consider                                                           | In This Example                                                                                                                          |
+|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| How can the existing PLM items be used in the concept design?                   | Convert existing items to concept components                                                                                             |
+| How are requirements and metrics correlated?                                    | Map requirements to components in the concept structure                                                                                  |
+| How can the concept structure accommodate multiple concept designs in parallel? | Assign components to solution alternatives                                                                                               |
+| How do I ascertain the most suitable concept design?                            | Modify component specifications<br>Calculate metrics and compare solution alternatives<br>Determine the concept design that fulfils requirements |
+
+### Prerequisites
+Complete the following actions before proceeding to the next task:
+1. Convert existing items to components in the concept
+2. Assign components to solution alternatives
+
+The structure and component specifications of the newly-created concept *Mountain Bike* in this example are tabulated here. The units *Air Box, Exhaust System*, and *Oil Filter* are PLM items that have been converted to components.
+
+| Concept Component     | Default | Solution Alternative 2 | Solution Alternative 3 | Cost | Power |
+|-----------------------|---------|------------------------|------------------------|------|-------|
+| ATV Air Box           | Yes     |                        |                        | 330  | 17    |
+| Air Box               |         | Yes                    | Yes                    | 200  | 10    |
+| Exhaust System        | Yes     | Yes                    | Yes                    | 190  | 15    |
+| Oil Filter            |         |                        | Yes                    | 80   | 10    |
+| Cartridge Oil Filter  |         | Yes                    |                        | 140  | 14    |
+| Wrench Off Oil Filter | Yes     |                        |                        | 145  | 13    |
+
+The following actions are optional but recommended:
+1. Enhance specifications of the converted components Air Box, Exhaust System, and Oil Filter.  
+   Reuse existing PLM items by converting them to concept components in the structure, and modifying specifications according to the requirements. The changes in component specifications can be translated into item enhancement requests in the PLM system.
+2. Map requirements to components in the concept structure.
+
+## Calculate metrics
+1. On the *Edit Concept* page, click the concept root node Mountain Bike and assign the following specifications to it: *Target Cost* <code>470</code> and *Target Power* <code>40</code>.
+2. Click the *Metrics* link above the concept structure region to roll up and view metrics.
+3. Click the *Recalculate* icon to view a roll up of assigned metrics.
+
+## Compare and select a Solution Alternative
+View and analyze the metric calculations of each concept.
+
+1. On the *Edit Concept* page in *Metrics* view, select the *Solution Alternative* menu and click *Default*.  
+   The calculated power exceeds the target power as indicated by the Warning icon.
+2. Repeat step 1 to view the calculated metrics for Solution Alternative 2 and Solution Alternative 3 also.
+
+The cost and power metrics of each solution alternative are tabulated below.
+
+| Solution Alternative | Default | Solution Alternative 2 | Solution Alternative 3 |
+|----------------------|---------|------------------------|------------------------|
+| Cost                 | 665     | 530                    | 470                    |
+| Power                | 45      | 39                     | 35                     |
+
+Solution Alternative 2 offers an optimum solution to the primary requirements of *Target Cost* <code>470</code> and *Target Power* <code>40</code>, so you may choose to convert this alternative to a PLM item structure, or request approval for the concept Mountain Bike itself.

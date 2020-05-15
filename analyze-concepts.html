@@ -1,0 +1,307 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Analyzing concepts &mdash; Sphinx beta documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
+        <script type="text/javascript" src="_static/sphinx_tabs/tabs.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Finding the optimum solution alternative" href="calculate-metrics.html" />
+    <link rel="prev" title="Understanding concepts" href="concepts-explained.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #36454f" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concepts-explained.html">Understanding concepts</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Analyzing concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#roll-up-a-concept">Roll-up a concept</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="calculate-metrics.html">Finding the optimum solution alternative</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Sphinx</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Analyzing concepts</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="analyzing-concepts">
+<h1>Analyzing concepts<a class="headerlink" href="#analyzing-concepts" title="Permalink to this headline">¶</a></h1>
+<p>Analyze a concept in terms of target costs, compliance, requirements fulfilled, or similar parameters to make informed decisions on the concept’s lifecycle.</p>
+<div class="section" id="roll-up-a-concept">
+<h2>Roll-up a concept<a class="headerlink" href="#roll-up-a-concept" title="Permalink to this headline">¶</a></h2>
+<p>To compare target and actual metrics of units in a concept structure, click the <em>Roll-up</em> button. This action calculates the variance in the actual and target metric attributes across all units of the concept structure, as applicable.<br />In the <em>Metrics</em> view, a warning icon next to concept structure units indicates unfavorable variance values.</p>
+<p>A roll-up calculates the following metrics:</p>
+<ul class="simple">
+<li><p>Cost, weight, and power consumption</p></li>
+<li><p>Compliance</p></li>
+<li><p>Fulfilled requirements</p></li>
+<li><p>Status</p></li>
+<li><p>Concept score</p></li>
+</ul>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-0-0 docutils container">
+<div class="docutils container">
+<p>Cost, weight, and power consumption</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-0-1 docutils container">
+<div class="docutils container">
+<p>Compliance</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-0-2 docutils container">
+<div class="docutils container">
+<p>Fulfilled requirements</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-0-3 docutils container">
+<div class="docutils container">
+<p>Status</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-0-4 docutils container">
+<div class="docutils container">
+<p>Score</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-0-0 active docutils container">
+<p>Aggregates of the total values of linked items, concept components, and embedded concepts, up to the top-level concept.</p>
+<dl class="simple">
+<dt>Total cost calculations:</dt><dd><ul class="simple">
+<li><p>Total cost of an individual item or concept component = Material Cost + Non-Material Cost</p></li>
+<li><p>Total cost of a concept component assembly = Non-Material Cost + Aggregate of (Total cost of each item or component * Respective Quantities per Assembly)</p></li>
+<li><p>Total Weight of a concept component assembly = Aggregate of (Actual Weights of each linked item, concept component, and embedded concept * Respective Quantities)</p></li>
+<li><p>Total Power Consumption of a concept component assembly = Aggregate of (Actual Power Consumption of each linked item, concept component and embedded concept * Respective Quantities)</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-0-1 docutils container">
+<p>The compliance status of a concept component or a linked item defines the compliance of the next higher-level component.</p>
+<p>The compliance statuses of items are read directly from PLM. They are mapped as either compliant or noncompliant items in CDM, depending on the completeness of information available.
+A noncompliant item or component renders its higher-level component noncompliant also.</p>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-0-2 docutils container">
+<p>The number of assigned and fulfilled requirements per individual components in the concept structure, as applicable.</p>
+<p>This analysis aids in fine-tuning the accuracy of a proposed concept design in meeting user needs.</p>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-0-3 docutils container">
+<p>The statuses of individual components and linked items in a concept assembly decide the aggregated status of the higher-level component, upto the top-level concept.</p>
+<p>You can link items from PLM in the concept structure if they are in either conceptual, preliminary, or production stage.</p>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment sphinx-data-tab-0-4 docutils container">
+<p>Assessment of solution alternatives against design objectives.</p>
+<dl class="simple">
+<dt>Concept-level scores calculation:</dt><dd><ul class="simple">
+<li><p>the number of items in the structure, compared to concept components. Reuse of items scores extra points.</p></li>
+<li><p>the number of items with scores higher than the target value 85. A high percentage of high-scoring items in the structure raises the concept score.</p></li>
+<li><p>the number of items missing data such as compliance status, lead time, number of manufacturers, or preferred status. Complete items rank high.</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="view-metrics-in-a-spider-chart">
+<h3>View metrics in a Spider Chart<a class="headerlink" href="#view-metrics-in-a-spider-chart" title="Permalink to this headline">¶</a></h3>
+<p>Use a spider chart to view and compare aggregated metrics across multiple solution alternatives, in an graphical or tabular form.</p>
+<p>Metrics are normalized - the chart calculates the relative deviation of each actual value from the target value, and displays positive or negative deviations from the target value.</p>
+<p>The <em>Table view</em> summarizes the data of the Spider Chart (calculated variance and metrics per solution alternatives) for quick reference.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="calculate-metrics.html" class="btn btn-neutral float-right" title="Finding the optimum solution alternative" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="concepts-explained.html" class="btn btn-neutral float-left" title="Understanding concepts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Sabita Rao
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

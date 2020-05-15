@@ -1,0 +1,11 @@
+# Introduction
+Concept Design Management (CDM) is a collaborative design workspace in the IM suite. With concepts, you can convert product ideas into detailed prototypes that are ready for production. 
+
+## Audience
+This guide is intended for product architects, managers, and executives who are involved in product design and conceptualization.
+
+## About this guide
+This document describes CDM in the IM suite. For information on requirements and proposals, see {links to IM product guides}.
+
+## Prerequisites
+Contact your system administrator for your login credentials.
